@@ -4,38 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09241811-1568-4cf7-ad52-5613a865dda2" name="Changes" comment="">
+    <list default="true" id="98c59fcb-6fbf-4e89-b6be-329c82b7dfe7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/OtherUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/OtherUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/ViewerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/ViewerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/ActorContractDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/ActorContractDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/BoxOffice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/BoxOffice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Performance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Performance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Theatre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Theatre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Viewer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ActorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ActorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/BoxOfficeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/BoxOfficeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/DirectorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/DirectorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/PerformanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/PerformanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TheatreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TheatreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TicketService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ViewerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/ViewerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/admin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/employee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/viewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/viewer.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,23 +21,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2i3aU2TbDt3gHeNv3UUwOhgG6Qx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2iFkNEtVyFg3Z8ESqxYcKbVbkbb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,22 +43,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/tpyng/IdeaProjects/theatre",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "C:/Users/sensey/IdeaProjects/hotel-managment"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="09241811-1568-4cf7-ad52-5613a865dda2" name="Changes" comment="" />
-      <created>1718721728107</created>
+      <changelist id="98c59fcb-6fbf-4e89-b6be-329c82b7dfe7" name="Changes" comment="" />
+      <created>1719093671863</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1718721728107</updated>
+      <updated>1719093671863</updated>
     </task>
     <servers />
   </component>
@@ -92,40 +62,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="user">
-                    <value>
-                      <list>
-                        <option value="*" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="COLUMN_ID_WIDTH">
-                <map>
-                  <entry key="Table.Default.Author.ColumnIdWidth" value="84" />
-                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="77" />
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="*" />
-                </option>
-              </RecentGroup>
-            </list>
+            <State />
           </value>
         </entry>
       </map>

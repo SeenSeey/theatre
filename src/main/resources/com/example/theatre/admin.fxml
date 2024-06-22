@@ -3,11 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.theatre.Controllers.AdminController">
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.theatre.Controllers.AdminController">
     <children>
         <TabPane>
             <tabs>
-                <!-- Theatre Tab -->
                 <Tab text="Theatres">
                     <content>
                         <VBox spacing="10">
@@ -35,11 +34,11 @@
                                                 <TextField fx:id="theatrePhoneField" />
                                             </children>
                                         </VBox>
-                                        <VBox spacing="10" alignment="CENTER">
+                                        <VBox alignment="CENTER" spacing="10">
                                             <children>
-                                                <Button text="Add" onAction="#addTheatre" />
-                                                <Button text="Update" onAction="#updateTheatre" />
-                                                <Button text="Delete" onAction="#deleteTheatre" />
+                                                <Button onAction="#addTheatre" text="Add" />
+                                                <Button onAction="#updateTheatre" text="Update" />
+                                                <Button onAction="#deleteTheatre" text="Delete" />
                                             </children>
                                         </VBox>
                                     </children>
@@ -58,7 +57,6 @@
                                         <TableColumn fx:id="boxOfficeIdColumn" text="ID" />
                                         <TableColumn fx:id="boxOfficeLocationColumn" text="Location" />
                                         <TableColumn fx:id="boxOfficePhoneColumn" text="Phone" />
-                                        <TableColumn fx:id="boxOfficeTheatreColumn" text="Theatre" />
                                     </columns>
                                 </TableView>
                                 <HBox spacing="10">
@@ -71,11 +69,11 @@
                                                 <TextField fx:id="boxOfficePhoneField" />
                                             </children>
                                         </VBox>
-                                        <VBox spacing="10"  alignment="CENTER">
+                                        <VBox alignment="CENTER" spacing="10">
                                             <children>
-                                                <Button text="Add" onAction="#addBoxOffice" />
-                                                <Button text="Update" onAction="#updateBoxOffice" />
-                                                <Button text="Delete" onAction="#deleteBoxOffice" />
+                                                <Button onAction="#addBoxOffice" text="Add" />
+                                                <Button onAction="#updateBoxOffice" text="Update" />
+                                                <Button onAction="#deleteBoxOffice" text="Delete" />
                                             </children>
                                         </VBox>
                                     </children>
@@ -112,11 +110,11 @@
                                                 <TextField fx:id="directorAwardField" />
                                             </children>
                                         </VBox>
-                                        <VBox spacing="10" alignment="CENTER">
+                                        <VBox alignment="CENTER" spacing="10">
                                             <children>
-                                                <Button text="Add" onAction="#addDirector" />
-                                                <Button text="Update" onAction="#updateDirector" />
-                                                <Button text="Delete" onAction="#deleteDirector" />
+                                                <Button onAction="#addDirector" text="Add" />
+                                                <Button onAction="#updateDirector" text="Update" />
+                                                <Button onAction="#deleteDirector" text="Delete" />
                                             </children>
                                         </VBox>
                                     </children>
@@ -153,11 +151,11 @@
                                                 <TextField fx:id="actorAwardField" />
                                             </children>
                                         </VBox>
-                                        <VBox spacing="10" alignment="CENTER">
+                                        <VBox alignment="CENTER" spacing="10">
                                             <children>
-                                                <Button text="Add" onAction="#addActor" />
-                                                <Button text="Update" onAction="#updateActor" />
-                                                <Button text="Delete" onAction="#deleteActor" />
+                                                <Button onAction="#addActor" text="Add" />
+                                                <Button onAction="#updateActor" text="Update" />
+                                                <Button onAction="#deleteActor" text="Delete" />
                                             </children>
                                         </VBox>
                                     </children>

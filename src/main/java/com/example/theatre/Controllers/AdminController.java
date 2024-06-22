@@ -68,8 +68,6 @@ public class AdminController {
     private TableColumn<BoxOffice, String> boxOfficeLocationColumn;
     @FXML
     private TableColumn<BoxOffice, String> boxOfficePhoneColumn;
-    @FXML
-    private TableColumn<BoxOffice, String> boxOfficeTheatreColumn;
 
     @FXML
     private TableView<Director> directorTable;
@@ -118,7 +116,6 @@ public class AdminController {
         boxOfficeIdColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         boxOfficeLocationColumn.setCellValueFactory(new PropertyValueFactory<>("location"));
         boxOfficePhoneColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
-        boxOfficeTheatreColumn.setCellValueFactory(new PropertyValueFactory<>("theatreName"));
 
         directorIdColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         directorNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
