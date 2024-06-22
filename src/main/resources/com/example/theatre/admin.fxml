@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.theatre.Controllers.AdminController">
+    <children>
+        <TabPane>
+            <tabs>
+                <!-- Theatre Tab -->
+                <Tab text="Theatres">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <TableView fx:id="theatreTable">
+                                    <columns>
+                                        <TableColumn fx:id="theatreIdColumn" text="ID" />
+                                        <TableColumn fx:id="theatreNameColumn" text="Name" />
+                                        <TableColumn fx:id="theatreLocationColumn" text="Location" />
+                                        <TableColumn fx:id="theatreSeatsColumn" text="Seats" />
+                                        <TableColumn fx:id="theatrePhoneColumn" text="Phone" />
+                                    </columns>
+                                </TableView>
+                                <HBox spacing="10">
+                                    <children>
+                                        <VBox spacing="10">
+                                            <children>
+                                                <Label text="Name:" />
+                                                <TextField fx:id="theatreNameField" />
+                                                <Label text="Location:" />
+                                                <TextField fx:id="theatreLocationField" />
+                                                <Label text="Seats:" />
+                                                <TextField fx:id="theatreSeatsField" />
+                                                <Label text="Phone:" />
+                                                <TextField fx:id="theatrePhoneField" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="10" alignment="CENTER">
+                                            <children>
+                                                <Button text="Add" onAction="#addTheatre" />
+                                                <Button text="Update" onAction="#updateTheatre" />
+                                                <Button text="Delete" onAction="#deleteTheatre" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+
+                <Tab text="Box Offices">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <TableView fx:id="boxOfficeTable">
+                                    <columns>
+                                        <TableColumn fx:id="boxOfficeIdColumn" text="ID" />
+                                        <TableColumn fx:id="boxOfficeLocationColumn" text="Location" />
+                                        <TableColumn fx:id="boxOfficePhoneColumn" text="Phone" />
+                                        <TableColumn fx:id="boxOfficeTheatreColumn" text="Theatre" />
+                                    </columns>
+                                </TableView>
+                                <HBox spacing="10">
+                                    <children>
+                                        <VBox spacing="10">
+                                            <children>
+                                                <Label text="Location:" />
+                                                <TextField fx:id="boxOfficeLocationField" />
+                                                <Label text="Phone:" />
+                                                <TextField fx:id="boxOfficePhoneField" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="10"  alignment="CENTER">
+                                            <children>
+                                                <Button text="Add" onAction="#addBoxOffice" />
+                                                <Button text="Update" onAction="#updateBoxOffice" />
+                                                <Button text="Delete" onAction="#deleteBoxOffice" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+
+                <Tab text="Directors">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <TableView fx:id="directorTable">
+                                    <columns>
+                                        <TableColumn fx:id="directorIdColumn" text="ID" />
+                                        <TableColumn fx:id="directorNameColumn" text="Name" />
+                                        <TableColumn fx:id="directorSurnameColumn" text="Surname" />
+                                        <TableColumn fx:id="directorEducationColumn" text="Education" />
+                                        <TableColumn fx:id="directorAwardColumn" text="Award" />
+                                    </columns>
+                                </TableView>
+                                <HBox spacing="10">
+                                    <children>
+                                        <VBox spacing="10">
+                                            <children>
+                                                <Label text="Name:" />
+                                                <TextField fx:id="directorNameField" />
+                                                <Label text="Surname:" />
+                                                <TextField fx:id="directorSurnameField" />
+                                                <Label text="Education:" />
+                                                <TextField fx:id="directorEducationField" />
+                                                <Label text="Award:" />
+                                                <TextField fx:id="directorAwardField" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="10" alignment="CENTER">
+                                            <children>
+                                                <Button text="Add" onAction="#addDirector" />
+                                                <Button text="Update" onAction="#updateDirector" />
+                                                <Button text="Delete" onAction="#deleteDirector" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+
+                <Tab text="Actors">
+                    <content>
+                        <VBox spacing="10">
+                            <children>
+                                <TableView fx:id="actorTable">
+                                    <columns>
+                                        <TableColumn fx:id="actorIdColumn" text="ID" />
+                                        <TableColumn fx:id="actorNameColumn" text="Name" />
+                                        <TableColumn fx:id="actorSurnameColumn" text="Surname" />
+                                        <TableColumn fx:id="actorEducationColumn" text="Education" />
+                                        <TableColumn fx:id="actorAwardColumn" text="Award" />
+                                    </columns>
+                                </TableView>
+                                <HBox spacing="10">
+                                    <children>
+                                        <VBox spacing="10">
+                                            <children>
+                                                <Label text="Name:" />
+                                                <TextField fx:id="actorNameField" />
+                                                <Label text="Surname:" />
+                                                <TextField fx:id="actorSurnameField" />
+                                                <Label text="Education:" />
+                                                <TextField fx:id="actorEducationField" />
+                                                <Label text="Award:" />
+                                                <TextField fx:id="actorAwardField" />
+                                            </children>
+                                        </VBox>
+                                        <VBox spacing="10" alignment="CENTER">
+                                            <children>
+                                                <Button text="Add" onAction="#addActor" />
+                                                <Button text="Update" onAction="#updateActor" />
+                                                <Button text="Delete" onAction="#deleteActor" />
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>

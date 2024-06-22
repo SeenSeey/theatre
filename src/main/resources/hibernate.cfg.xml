@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/theatre</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">vfhc2015</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.example.theatre.Models.Theatre"/>
+        <mapping class="com.example.theatre.Models.Performance"/>
+        <mapping class="com.example.theatre.Models.Director"/>
+        <mapping class="com.example.theatre.Models.BoxOffice"/>
+        <mapping class="com.example.theatre.Models.Viewer"/>
+        <mapping class="com.example.theatre.Models.Ticket"/>
+        <mapping class="com.example.theatre.Models.Actor"/>
+        <mapping class="com.example.theatre.Models.Contract"/>
+    </session-factory>
+</hibernate-configuration>

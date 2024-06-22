@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.theatre.Controllers.EmployeeController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Performances"/>
+            <TableView fx:id="performanceTableView" prefHeight="200" prefWidth="400">
+                <columns>
+                    <TableColumn fx:id="performanceNameColumn" text="Name"/>
+                    <TableColumn fx:id="performanceAuthorColumn" text="Author"/>
+                    <TableColumn fx:id="performanceTimeIntervalColumn" text="Time Interval"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+
+    <Separator/>
+
+    <VBox spacing="10">
+        <HBox spacing="10">
+            <Label text="Name"/>
+            <TextField fx:id="performanceNameField"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Author"/>
+            <TextField fx:id="performanceAuthorField"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Time Interval"/>
+            <TextField fx:id="performanceTimeIntervalField"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Button fx:id="addPerformanceButton" text="Add Performance"/>
+            <Button fx:id="updatePerformanceButton" text="Update Performance"/>
+            <Button fx:id="deletePerformanceButton" text="Delete Performance"/>
+        </HBox>
+    </VBox>
+
+    <Separator/>
+
+    <HBox spacing="10">
+        <VBox spacing="5">
+            <Label text="Directors"/>
+            <TableView fx:id="directorTableView" prefHeight="200" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="directorNameColumn" text="Name"/>
+                    <TableColumn fx:id="directorSurnameColumn" text="Surname"/>
+                    <TableColumn fx:id="directorEducationColumn" text="Education"/>
+                    <TableColumn fx:id="directorAwardColumn" text="Award"/>
+                </columns>
+            </TableView>
+            <Button fx:id="assignDirectorButton" text="Assign Director"/>
+            <Button fx:id="removeDirectorButton" text="Remove Director"/>
+            <Label text="Assigned Director"/>
+            <TableView fx:id="assignedDirectorTableView" prefHeight="100" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="assignedDirectorNameColumn" text="Name"/>
+                    <TableColumn fx:id="assignedDirectorSurnameColumn" text="Surname"/>
+                    <TableColumn fx:id="assignedDirectorEducationColumn" text="Education"/>
+                    <TableColumn fx:id="assignedDirectorAwardColumn" text="Award"/>
+                </columns>
+            </TableView>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Actors"/>
+            <TableView fx:id="actorTableView" prefHeight="200" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="actorNameColumn" text="Name"/>
+                    <TableColumn fx:id="actorSurnameColumn" text="Surname"/>
+                    <TableColumn fx:id="actorEducationColumn" text="Education"/>
+                    <TableColumn fx:id="actorAwardColumn" text="Award"/>
+                </columns>
+            </TableView>
+            <HBox spacing="10">
+                <TextField fx:id="actorSalaryField" promptText="Salary"/>
+                <TextField fx:id="actorRoleField" promptText="Role"/>
+                <Button fx:id="assignActorButton" text="Assign Actor"/>
+                <Button fx:id="removeActorButton" text="Remove Actor"/>
+            </HBox>
+            <Label text="Assigned Actors"/>
+            <TableView fx:id="assignedActorTableView" prefHeight="100" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="assignedActorNameColumn" text="Name"/>
+                    <TableColumn fx:id="assignedActorSurnameColumn" text="Surname"/>
+                    <TableColumn fx:id="assignedActorEducationColumn" text="Education"/>
+                    <TableColumn fx:id="assignedActorAwardColumn" text="Award"/>
+                    <TableColumn fx:id="assignedActorSalaryColumn" text="Salary"/>
+                    <TableColumn fx:id="assignedActorRoleColumn" text="Role"/>
+                </columns>
+            </TableView>
+        </VBox>
+        <VBox spacing="5">
+            <Label text="Theatres"/>
+            <TableView fx:id="theatreListTableView" prefHeight="200" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="allTheatreNameColumn" text="Name"/>
+                    <TableColumn fx:id="allTheatreLocationColumn" text="Location"/>
+                </columns>
+            </TableView>
+            <Button fx:id="assignTheatreButton" text="Assign Theatre"/>
+            <Button fx:id="removeTheatreButton" text="Remove Theatre"/>
+            <Label text="Assigned Theatre"/>
+            <TableView fx:id="theatreTableView" prefHeight="100" prefWidth="200">
+                <columns>
+                    <TableColumn fx:id="assignedTheatreNameColumn" text="Name"/>
+                </columns>
+            </TableView>
+        </VBox>
+    </HBox>
+
+    <Separator/>
+
+    <VBox spacing="10">
+        <HBox spacing="10">
+            <Label text="Number of Tickets"/>
+            <TextField fx:id="numberOfTicketsField"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Label text="Event Date"/>
+            <DatePicker fx:id="timeEventPicker"/>
+        </HBox>
+
+        <HBox spacing="10">
+            <Button fx:id="addTicketsButton" text="Add Tickets"/>
+        </HBox>
+
+        <Label text="Tickets"/>
+        <TableView fx:id="ticketTableView" prefHeight="200" prefWidth="400">
+            <columns>
+                <TableColumn fx:id="ticketSeatNumberColumn" text="Seat Number"/>
+                <TableColumn fx:id="ticketTimeEventColumn" text="Time Event"/>
+            </columns>
+        </TableView>
+    </VBox>
+</VBox>

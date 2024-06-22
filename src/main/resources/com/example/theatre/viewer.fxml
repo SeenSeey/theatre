@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.theatre.Controllers.ViewerController"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox spacing="10" alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+        <HBox spacing="10">
+            <VBox spacing="5">
+                <Label text="Theatres"/>
+                <TableView fx:id="theatreTableView" prefHeight="200" prefWidth="300">
+                    <columns>
+                        <TableColumn fx:id="theatreNameColumn" text="Name"/>
+                        <TableColumn fx:id="theatreLocationColumn" text="Location"/>
+                    </columns>
+                </TableView>
+            </VBox>
+            <VBox spacing="5">
+                <Label text="Performances"/>
+                <TableView fx:id="performanceTableView" prefHeight="200" prefWidth="300">
+                    <columns>
+                        <TableColumn fx:id="performanceNameColumn" text="Name"/>
+                        <TableColumn fx:id="performanceAuthorColumn" text="Author"/>
+                        <TableColumn fx:id="performanceTimeIntervalColumn" text="Time Interval"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </HBox>
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Select Date"/>
+            <ComboBox fx:id="performanceDateComboBox"/>
+        </HBox>
+        <Separator/>
+        <VBox spacing="10">
+            <HBox spacing="10">
+                <Label text="Name"/>
+                <TextField fx:id="viewerNameField"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Surname"/>
+                <TextField fx:id="viewerSurnameField"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Phone Number"/>
+                <TextField fx:id="viewerPhoneNumberField"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Date of Birth"/>
+                <DatePicker fx:id="viewerDateOfBirthPicker"/>
+            </HBox>
+            <Button text="Book Ticket" onAction="#handleBookTicket"/>
+        </VBox>
+    </VBox>
+</AnchorPane>
