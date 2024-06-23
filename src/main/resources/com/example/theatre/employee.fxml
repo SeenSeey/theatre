@@ -1,146 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.theatre.Controllers.EmployeeController">
+<VBox style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.theatre.Controllers.EmployeeController">
     <padding>
-        <Insets top="10" right="10" bottom="10" left="10"/>
+        <Insets bottom="10" left="10" right="10" top="10" />
     </padding>
 
-    <HBox spacing="10">
+    <HBox spacing="10" VBox.vgrow="ALWAYS">
         <VBox spacing="5">
-            <Label text="Performances"/>
-            <TableView fx:id="performanceTableView" prefHeight="200" prefWidth="400">
+            <Label text="Performances">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TableView fx:id="performanceTableView" prefHeight="200" prefWidth="416.0" VBox.vgrow="ALWAYS">
                 <columns>
-                    <TableColumn fx:id="performanceNameColumn" text="Name"/>
-                    <TableColumn fx:id="performanceAuthorColumn" text="Author"/>
-                    <TableColumn fx:id="performanceTimeIntervalColumn" text="Time Interval"/>
+                    <TableColumn fx:id="performanceNameColumn" text="Name" />
+                    <TableColumn fx:id="performanceAuthorColumn" text="Author" />
+                    <TableColumn fx:id="performanceTimeIntervalColumn" text="Time Interval" />
                 </columns>
             </TableView>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
         </VBox>
     </HBox>
 
-    <Separator/>
+    <Separator />
 
-    <VBox spacing="10">
+    <VBox spacing="10" VBox.vgrow="ALWAYS">
         <HBox spacing="10">
-            <Label text="Name"/>
-            <TextField fx:id="performanceNameField"/>
+            <Label text="Name">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TextField fx:id="performanceNameField" prefHeight="25.0" prefWidth="140.0" />
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="93.0" />
+         </padding>
         </HBox>
 
         <HBox spacing="10">
-            <Label text="Author"/>
-            <TextField fx:id="performanceAuthorField"/>
+            <Label text="Author">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TextField fx:id="performanceAuthorField" prefHeight="25.0" prefWidth="140.0" />
+         <padding>
+            <Insets left="88.0" />
+         </padding>
         </HBox>
 
         <HBox spacing="10">
-            <Label text="Time Interval"/>
-            <TextField fx:id="performanceTimeIntervalField"/>
+            <Label text="Time Interval">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TextField fx:id="performanceTimeIntervalField" prefHeight="25.0" prefWidth="140.0" />
+         <padding>
+            <Insets left="45.0" />
+         </padding>
         </HBox>
 
         <HBox spacing="10">
-            <Button fx:id="addPerformanceButton" text="Add Performance"/>
-            <Button fx:id="updatePerformanceButton" text="Update Performance"/>
-            <Button fx:id="deletePerformanceButton" text="Delete Performance"/>
+            <Button fx:id="addPerformanceButton" style="-fx-background-color: #000000;" text="Add Performance" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
+            <Button fx:id="updatePerformanceButton" style="-fx-background-color: #000000;" text="Update Performance" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
+            <Button fx:id="deletePerformanceButton" style="-fx-background-color: #000000;" text="Delete Performance" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
         </HBox>
+      <padding>
+         <Insets left="20.0" />
+      </padding>
     </VBox>
 
-    <Separator/>
+    <Separator />
 
     <HBox spacing="10">
-        <VBox spacing="5">
-            <Label text="Directors"/>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Directors">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
             <TableView fx:id="directorTableView" prefHeight="200" prefWidth="200">
                 <columns>
-                    <TableColumn fx:id="directorNameColumn" text="Name"/>
-                    <TableColumn fx:id="directorSurnameColumn" text="Surname"/>
-                    <TableColumn fx:id="directorEducationColumn" text="Education"/>
-                    <TableColumn fx:id="directorAwardColumn" text="Award"/>
+                    <TableColumn fx:id="directorNameColumn" text="Name" />
+                    <TableColumn fx:id="directorSurnameColumn" text="Surname" />
+                    <TableColumn fx:id="directorEducationColumn" text="Education" />
+                    <TableColumn fx:id="directorAwardColumn" text="Award" />
                 </columns>
             </TableView>
-            <Button fx:id="assignDirectorButton" text="Assign Director"/>
-            <Button fx:id="removeDirectorButton" text="Remove Director"/>
-            <Label text="Assigned Director"/>
+            <Button fx:id="assignDirectorButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #000000;" text="Assign Director" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
+            <Button fx:id="removeDirectorButton" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #000000;" text="Remove Director" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
+            <Label text="Assigned Director">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
             <TableView fx:id="assignedDirectorTableView" prefHeight="100" prefWidth="200">
                 <columns>
-                    <TableColumn fx:id="assignedDirectorNameColumn" text="Name"/>
-                    <TableColumn fx:id="assignedDirectorSurnameColumn" text="Surname"/>
-                    <TableColumn fx:id="assignedDirectorEducationColumn" text="Education"/>
-                    <TableColumn fx:id="assignedDirectorAwardColumn" text="Award"/>
+                    <TableColumn fx:id="assignedDirectorNameColumn" text="Name" />
+                    <TableColumn fx:id="assignedDirectorSurnameColumn" text="Surname" />
+                    <TableColumn fx:id="assignedDirectorEducationColumn" text="Education" />
+                    <TableColumn fx:id="assignedDirectorAwardColumn" text="Award" />
                 </columns>
             </TableView>
+         <padding>
+            <Insets left="5.0" top="10.0" />
+         </padding>
         </VBox>
-        <VBox spacing="5">
-            <Label text="Actors"/>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Actors">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
             <TableView fx:id="actorTableView" prefHeight="200" prefWidth="200">
                 <columns>
-                    <TableColumn fx:id="actorNameColumn" text="Name"/>
-                    <TableColumn fx:id="actorSurnameColumn" text="Surname"/>
-                    <TableColumn fx:id="actorEducationColumn" text="Education"/>
-                    <TableColumn fx:id="actorAwardColumn" text="Award"/>
+                    <TableColumn fx:id="actorNameColumn" text="Name" />
+                    <TableColumn fx:id="actorSurnameColumn" text="Surname" />
+                    <TableColumn fx:id="actorEducationColumn" text="Education" />
+                    <TableColumn fx:id="actorAwardColumn" text="Award" />
                 </columns>
             </TableView>
             <HBox spacing="10">
-                <TextField fx:id="actorSalaryField" promptText="Salary"/>
-                <TextField fx:id="actorRoleField" promptText="Role"/>
-                <Button fx:id="assignActorButton" text="Assign Actor"/>
-                <Button fx:id="removeActorButton" text="Remove Actor"/>
+                <TextField fx:id="actorSalaryField" promptText="Salary" />
+                <TextField fx:id="actorRoleField" promptText="Role" />
+                <Button fx:id="assignActorButton" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #000000;" text="Assign Actor" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Button>
+                <Button fx:id="removeActorButton" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #000000;" text="Remove Actor" textFill="WHITE" />
             </HBox>
-            <Label text="Assigned Actors"/>
-            <TableView fx:id="assignedActorTableView" prefHeight="100" prefWidth="200">
+            <Label text="Assigned Actors">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TableView fx:id="assignedActorTableView" prefHeight="130.0" prefWidth="505.0">
                 <columns>
-                    <TableColumn fx:id="assignedActorNameColumn" text="Name"/>
-                    <TableColumn fx:id="assignedActorSurnameColumn" text="Surname"/>
-                    <TableColumn fx:id="assignedActorEducationColumn" text="Education"/>
-                    <TableColumn fx:id="assignedActorAwardColumn" text="Award"/>
-                    <TableColumn fx:id="assignedActorSalaryColumn" text="Salary"/>
-                    <TableColumn fx:id="assignedActorRoleColumn" text="Role"/>
+                    <TableColumn fx:id="assignedActorNameColumn" text="Name" />
+                    <TableColumn fx:id="assignedActorSurnameColumn" text="Surname" />
+                    <TableColumn fx:id="assignedActorEducationColumn" text="Education" />
+                    <TableColumn fx:id="assignedActorAwardColumn" text="Award" />
+                    <TableColumn fx:id="assignedActorSalaryColumn" text="Salary" />
+                    <TableColumn fx:id="assignedActorRoleColumn" text="Role" />
                 </columns>
             </TableView>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
         </VBox>
-        <VBox spacing="5">
-            <Label text="Theatres"/>
+        <VBox spacing="5" HBox.hgrow="ALWAYS">
+            <Label text="Theatres">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
             <TableView fx:id="theatreListTableView" prefHeight="200" prefWidth="200">
                 <columns>
-                    <TableColumn fx:id="allTheatreNameColumn" text="Name"/>
-                    <TableColumn fx:id="allTheatreLocationColumn" text="Location"/>
+                    <TableColumn fx:id="allTheatreNameColumn" text="Name" />
+                    <TableColumn fx:id="allTheatreLocationColumn" text="Location" />
                 </columns>
             </TableView>
-            <Button fx:id="assignTheatreButton" text="Assign Theatre"/>
-            <Button fx:id="removeTheatreButton" text="Remove Theatre"/>
-            <Label text="Assigned Theatre"/>
+            <Button fx:id="assignTheatreButton" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #000000;" text="Assign Theatre" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="15.0" />
+            </VBox.margin></Button>
+            <Button fx:id="removeTheatreButton" prefHeight="25.0" prefWidth="125.0" style="-fx-background-color: #000000;" text="Remove Theatre" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font>
+            <VBox.margin>
+               <Insets left="15.0" />
+            </VBox.margin></Button>
+            <Label text="Assigned Theatre">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
             <TableView fx:id="theatreTableView" prefHeight="100" prefWidth="200">
                 <columns>
-                    <TableColumn fx:id="assignedTheatreNameColumn" text="Name"/>
+                    <TableColumn fx:id="assignedTheatreNameColumn" text="Name" />
                 </columns>
             </TableView>
+         <padding>
+            <Insets right="5.0" top="10.0" />
+         </padding>
         </VBox>
     </HBox>
 
-    <Separator/>
+    <Separator />
 
-    <VBox spacing="10">
+    <VBox spacing="10" VBox.vgrow="ALWAYS">
         <HBox spacing="10">
-            <Label text="Number of Tickets"/>
-            <TextField fx:id="numberOfTicketsField"/>
+            <Label text="Number of Tickets">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <TextField fx:id="numberOfTicketsField" />
         </HBox>
 
         <HBox spacing="10">
-            <Label text="Event Date"/>
-            <DatePicker fx:id="timeEventPicker"/>
+            <Label text="Event Date">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Label>
+            <DatePicker fx:id="timeEventPicker" />
         </HBox>
 
         <HBox spacing="10">
-            <Button fx:id="addTicketsButton" text="Add Tickets"/>
+            <Button fx:id="addTicketsButton" style="-fx-background-color: #000000;" text="Add Tickets" textFill="WHITE">
+            <font>
+               <Font name="Arial Black" size="12.0" />
+            </font></Button>
         </HBox>
 
-        <Label text="Tickets"/>
-        <TableView fx:id="ticketTableView" prefHeight="200" prefWidth="400">
+        <Label text="Tickets">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+        <TableView fx:id="ticketTableView" prefHeight="200" prefWidth="400" VBox.vgrow="ALWAYS">
             <columns>
-                <TableColumn fx:id="ticketSeatNumberColumn" text="Seat Number"/>
-                <TableColumn fx:id="ticketTimeEventColumn" text="Time Event"/>
+                <TableColumn fx:id="ticketSeatNumberColumn" text="Seat Number" />
+                <TableColumn fx:id="ticketTimeEventColumn" text="Time Event" />
             </columns>
         </TableView>
     </VBox>
