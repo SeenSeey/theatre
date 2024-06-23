@@ -10,6 +10,7 @@ import com.example.theatre.Service.DirectorService;
 import com.example.theatre.Service.TheatreService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -380,5 +381,10 @@ public class AdminController {
         actorSurnameField.clear();
         actorEducationField.clear();
         actorAwardField.clear();
+    }
+
+    @FXML
+    private void handleBack(ActionEvent event) {
+        OtherUtils.changeScene(event, "/com/example/theatre/hello-view.fxml", "?");
     }
 }

@@ -7,6 +7,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
@@ -24,6 +25,7 @@ public class EmployeeController {
     public Button addPerformanceButton;
     public Button updatePerformanceButton;
     public Button deletePerformanceButton;
+    public Button handleBack;
     @FXML
     private TableView<Performance> performanceTableView;
     @FXML
@@ -376,5 +378,8 @@ public class EmployeeController {
             ticketTableView.getItems().clear();
         }
     }
-
+    @FXML
+    private void handleBack(ActionEvent event) {
+        OtherUtils.changeScene(event, "/com/example/theatre/hello-view.fxml", "?");
+    }
 }

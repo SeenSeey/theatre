@@ -4,6 +4,7 @@ import com.example.theatre.Models.*;
 import com.example.theatre.Service.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -135,5 +136,10 @@ public class ViewerController {
         alert.setHeaderText("Failed to Book Ticket");
         alert.setContentText("There was an error booking your ticket. Please try again.");
         alert.showAndWait();
+    }
+
+    @FXML
+    private void handleBack(ActionEvent event) {
+        OtherUtils.changeScene(event, "/com/example/theatre/hello-view.fxml", "?");
     }
 }
