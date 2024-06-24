@@ -108,7 +108,6 @@ public class ViewerController {
             Ticket bookedTicket = ticketService.bookTicket(selectedPerformance.getId(), selectedDate, viewer.getId());
             if (bookedTicket != null) {
                 showBookingConfirmation(selectedPerformance, bookedTicket);
-                ticketService.removeBookedTicket(bookedTicket);
             } else {
                 showBookingError();
             }

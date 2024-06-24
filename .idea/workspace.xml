@@ -6,12 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="98c59fcb-6fbf-4e89-b6be-329c82b7dfe7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/ViewerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/ViewerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Models/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/theatre/Service/TicketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/employee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/employee.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/theatre/viewer.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/theatre/viewer.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,5 +69,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/theatre/Controllers/ViewerController.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

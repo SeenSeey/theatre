@@ -11,6 +11,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -25,7 +31,7 @@ public class EmployeeController {
     public Button addPerformanceButton;
     public Button updatePerformanceButton;
     public Button deletePerformanceButton;
-    public Button handleBack;
+    public TextField TimeEventField;
     @FXML
     private TableView<Performance> performanceTableView;
     @FXML
@@ -339,9 +345,11 @@ public class EmployeeController {
             int totalSeats = selectedPerformance.getTheatre().getNumberOfSeats();
             int currentTickets = ticketService.getTicketsByPerformanceId(selectedPerformance.getId()).size();
             int numberOfTickets;
+            String timeEvent;
 
             try {
                 numberOfTickets = Integer.parseInt(numberOfTicketsField.getText());
+                timeEvent = TimeEventField.getText();
             } catch (NumberFormatException e) {
                 showAlert("Error", "Invalid input");
                 return;
@@ -352,21 +360,33 @@ public class EmployeeController {
                 return;
             }
 
-            if (currentTickets + numberOfTickets <= totalSeats) {
-                for (int i = 1; i <= numberOfTickets; i++) {
-                    Ticket ticket = new Ticket();
-                    ticket.setPerformance(selectedPerformance);
-                    ticket.setSeatNumber(String.valueOf(currentTickets + i));
-                    ticket.setTimeEvent(java.sql.Date.valueOf(timeEventPicker.getValue()));
-                    ticketService.saveTicket(ticket);
-                }
-                loadTickets();
-            } else {
-                showAlert("Error", "Maximum seats exceeded");
+            LocalDate date = timeEventPicker.getValue();
+            LocalTime time;
+            try {
+                DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm");
+                time = LocalTime.parse(timeEvent, timeFormatter);
+            } catch (DateTimeParseException e) {
+                showAlert("Error", "Invalid time format, please use HH:mm");
+                return;
             }
+
+            LocalDateTime dateTime = LocalDateTime.of(date, time);
+            Timestamp timestamp = Timestamp.valueOf(dateTime);
+
+
+            for (int i = 1; i <= numberOfTickets; i++) {
+                Ticket ticket = new Ticket();
+                ticket.setPerformance(selectedPerformance);
+                ticket.setSeatNumber(String.valueOf(currentTickets + i));
+                ticket.setTimeEvent(timestamp);
+                ticketService.saveTicket(ticket);
+            }
+            loadTickets();
+
         } else {
             showAlert("Error", "No performance selected");
         }
+
     }
 
     private void loadTickets() {

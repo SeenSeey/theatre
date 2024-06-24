@@ -16,10 +16,6 @@ public class Ticket {
     private Performance performance;
 
     @ManyToOne
-    @JoinColumn(name = "office_id")
-    private BoxOffice office;
-
-    @ManyToOne
     @JoinColumn(name = "viewer_id")
     private Viewer viewer;
 
@@ -45,13 +41,6 @@ public class Ticket {
         this.performance = performance;
     }
 
-    public BoxOffice getOffice() {
-        return office;
-    }
-
-    public void setOffice(BoxOffice office) {
-        this.office = office;
-    }
 
     public Viewer getViewer() {
         return viewer;

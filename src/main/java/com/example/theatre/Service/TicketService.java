@@ -55,7 +55,15 @@ public class TicketService {
                     .uniqueResult();
 
             if (ticket != null) {
-                ticket.setViewer(session.get(Viewer.class, viewerId));
+                Viewer viewer = session.get(Viewer.class, viewerId);
+                if (viewer == null) {
+                    throw new RuntimeException("Viewer with id " + viewerId + " not found.");
+                }
+
+                ticket.setViewer(viewer);
+
+                System.out.println("Booking ticket: " + ticket);
+
                 session.update(ticket);
                 transaction.commit();
                 return ticket;
@@ -71,6 +79,7 @@ public class TicketService {
             return null;
         }
     }
+
 
     public void removeBookedTicket(Ticket ticket) {
         Transaction transaction = null;
